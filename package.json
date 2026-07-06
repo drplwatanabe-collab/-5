@@ -5,9 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist:win": "electron-builder --win --x64",
-    "dist:mac": "electron-builder --mac",
-    "dist:linux": "electron-builder --linux"
+    "dist:win": "electron-builder --win --x64 --publish never",
+    "dist:mac": "electron-builder --mac --publish never",
+    "dist:linux": "electron-builder --linux --publish never"
   },
   "build": {
     "appId": "jp.drpurelabo.salon-dashboard",
@@ -66,8 +66,7 @@
       "language": "1041",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
-    },
-    "publish": "never"
+    }
   },
   "devDependencies": {
     "electron": "^28.3.3",
